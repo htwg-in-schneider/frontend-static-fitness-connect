@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 0 0 0 12px;
+    z-index: 1;
 }
 
 .sidebar-logo-image {
@@ -103,16 +104,27 @@ body {
     font-family: "Arial", sans-serif;
 }
 
+.header-left {
+    flex: 1;
+}
+
 .header-right {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 12px;
+    width: 100%;
+    max-width: 300px;
+    flex: 1;
 }
 
 .search-bar {
     background: #F4F4F4;
     border-radius: 20px;
     padding: 0;
+    flex: 1;
+    display: flex;
+    min-width: 120px;
 }
 
 .search-bar input {
@@ -123,7 +135,7 @@ body {
     color: #888888;
     font-family: "Arial", sans-serif;
     outline: none;
-    width: 220px;
+    width: 100%;
 }
 
 .profile-icon {
@@ -149,6 +161,7 @@ body {
 .content-grid {
     display: flex;
     gap: 24px;
+    flex-direction: row;
 }
 
 .left-column {
@@ -339,6 +352,11 @@ body {
     background: #A00000;
 }
 
+.content-grid-right {
+    display: flex;
+    flex-direction: column;
+}
+
 .trainer-card {
     display: flex;
     align-items: center;
@@ -400,12 +418,6 @@ body {
     color: #FFFFFF;
 }
 
-@media (max-width: 768px) {
-    .btn-action-primary {
-        background: #ff00cc;
-    }
-}
-
 .btn-action-disabled {
     background:#888888;
     color: #FFFFFF;
@@ -417,4 +429,50 @@ body {
 
 .btn-action-disabled:hover {
     background: #999999;
+}
+
+
+@media (max-width: 768px) {
+    .content-grid-right {
+        flex-direction: row;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .trainer-section {
+        flex: 1;
+    }
+
+    .action-section {
+        flex: 1;
+    }
+
+    .content-grid {
+        flex-direction: column;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 658px) {
+    .content-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .events-row {
+        flex-direction: column;
+    }
+
+    .orte-row {
+        flex-direction: column;
+    }
+
+    .content-grid-right {
+        flex-direction: column;
+    }
 }
