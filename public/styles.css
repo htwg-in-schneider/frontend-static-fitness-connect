@@ -472,6 +472,10 @@ body {
 
 
 @media (max-width: 768px) {
+    .sidebar-logo-image {
+        content: url(LogoFitnessConnectOneLine.png);
+    }
+    
     .content-grid-right {
         flex-direction: row;
         width: 100%;
