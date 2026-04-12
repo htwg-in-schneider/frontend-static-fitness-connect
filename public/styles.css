@@ -565,6 +565,10 @@ body {
         gap: 12px;
     }
 
+    .hero-card {
+        flex-direction: column;
+    }
+
     .section-hero {
         flex-direction: column;
     }
