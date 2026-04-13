@@ -333,6 +333,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
+}
+
+.trainer-card .btn-default {
+    width: 80px;
 }
 
 .trainer-name {
