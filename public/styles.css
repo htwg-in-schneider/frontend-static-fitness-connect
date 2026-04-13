@@ -302,7 +302,8 @@ body {
 
 .trainer-row .trainer-card {
     flex: 1;
-    min-width: 200px;
+    min-width: 300px;
+    max-width: 450px;
 }
 
 .trainer-card {
