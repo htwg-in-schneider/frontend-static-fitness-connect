@@ -15,6 +15,25 @@ body {
     min-height: 100vh;
 }
 
+.btn-default {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background: #C00000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Arial Rounded MT", "Arial", sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-default:hover {
+    background: #A00000;
+}
+
 .topnav {
     background: #1E293B;
     width: 100%;
@@ -278,6 +297,7 @@ body {
     display: flex;
     gap: 16px;
     overflow-x: auto;
+    padding: 10px 10px 20px 10px;
 }
 
 .trainer-row .trainer-card {
@@ -308,6 +328,10 @@ body {
 
 .trainer-card-body {
     padding: 12px 14px 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .trainer-name {
@@ -431,25 +455,6 @@ body {
     color: #4CAF50;
 }
 
-.btn-teilnehmen {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    background: #C00000;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 8px;
-    font-size: 10px;
-    font-weight: bold;
-    font-family: "Arial Rounded MT", "Arial", sans-serif;
-    cursor: pointer;
-    text-align: center;
-}
-
-.btn-teilnehmen:hover {
-    background: #A00000;
-}
-
 .orte-row {
     display: flex;
     gap: 16px;
@@ -493,25 +498,6 @@ body {
     color: #64748B;
     font-family: "Arial", sans-serif;
     margin-bottom: 10px;
-}
-
-.btn-ansehen {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    background: #C00000;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 8px;
-    font-size: 10px;
-    font-weight: bold;
-    font-family: "Arial Rounded MT", "Arial", sans-serif;
-    cursor: pointer;
-    text-align: center;
-}
-
-.btn-ansehen:hover {
-    background: #A00000;
 }
 
 .content-grid-right {
