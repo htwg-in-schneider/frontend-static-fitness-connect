@@ -208,6 +208,7 @@ body {
     justify-content: center;
     border-top: none;
     padding: 48px 32px;
+    scroll-margin-top: 60px;
 }
 
 .hero-card {
@@ -239,14 +240,17 @@ body {
 
 .section-events {
     background: #F8FAFC;
+    scroll-margin-top: 60px;
 }
 
 .section-orte {
     background: #FFFFFF;
+    scroll-margin-top: 60px;
 }
 
 .section-trainer {
     background: #F8FAFC;
+    scroll-margin-top: 60px;
 }
 
 .hero-text {
